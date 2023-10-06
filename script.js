@@ -1,3 +1,10 @@
+function handleBuyTicket(e, availableTickets) {
+  // decreasing number of tickets provided more than 0
+  if (parseInt(availableTickets.innerHTML) > 0) {
+    availableTickets.innerHTML = parseInt(availableTickets.innerHTML) - 1;
+  }
+}
+
 function displayMenu(data) {
   // grab element
   const ulMovies = document.querySelector("#movies");
@@ -44,12 +51,23 @@ function displayFirstMovie(data) {
   <p>Title: ${data.title}</p>
   <p>Run Time: ${data.runtime}</p>
   <p>Show Time: ${data.showtime}</p>
-  <p>Available Tickets: ${data.capacity - data.tickets_sold}</p>  
+  <p>Available Tickets: <span id="available-tickets">${
+    data.capacity - data.tickets_sold
+  }</span></p>  
   <button id="buy-ticket">Buy Ticket</button>
   `;
 
   //   attach to main
   main.appendChild(container);
+
+  //   grab elements
+  const availableTickets = document.querySelector("#available-tickets");
+  const buyTicket = document.querySelector("#buy-ticket");
+
+  //   clicking buy ticket
+  buyTicket.addEventListener("click", (e) => {
+    handleBuyTicket(e, availableTickets);
+  });
 }
 
 function fetchFirstMovie() {
