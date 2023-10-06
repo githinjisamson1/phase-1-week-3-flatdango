@@ -17,3 +17,5 @@ open the application in your web browser
 ## Author
 
 Developed by Samson Githinji
+
+Thank you for choosing Flatdango! Enjoy your movie experience at the Flatiron Movie Theater.
