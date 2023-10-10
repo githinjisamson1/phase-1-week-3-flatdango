@@ -2,6 +2,8 @@ function handleBuyTicket(e, availableTickets) {
   // decreasing number of tickets provided more than 0
   if (parseInt(availableTickets.innerHTML) > 0) {
     availableTickets.innerHTML = parseInt(availableTickets.innerHTML) - 1;
+  } else {
+    alert("All Tickets sold out!!");
   }
 }
 
@@ -19,6 +21,11 @@ function displayMenu(data) {
 
     // add to list of classes
     liMovie.classList.add("film-item");
+
+    // clicking movie list item
+    liMovie.addEventListener("click", (e) => {
+      displayFirstMovie(movie);
+    });
 
     // attach each film
     ulMovies.appendChild(liMovie);
