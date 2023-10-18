@@ -1,21 +1,39 @@
+
 # Flatdango Movie Ticket Booking
 
 Welcome to Flatdango, the website for ordering movie tickets at the Flatiron Theater. You can quickly explore and buy movie tickets for the newest releases at the theater with Flatdango. You can follow the instructions in this README file for installing and using the application.
 
+
+## Authors
+
+- [@githinjisamson1](https://www.github.com/octokatherine)
+
+
+## Feedback
+
+If you have any feedback, please reach out to me at githinjisamson148@gmail.com
+
 ## Installation
 
-To get Flatdango up and running on your local machine, follow theses instructions:
+Install my-project with npm
 
-clone the repository: git clone https://github.com/your-username/flatdango.git
+```bash
+  copy ssh
+  git clone phase-1-week-3-flatdango
+  cd phase-1-week-3-flatdango
+  json-server --watch db.json
+  open using an editor e.g., vs code: code .
+  open index.html using your favorite browser
+```
+    
+## License
 
-navigate to the project directory: cd flatdango
+[MIT](https://choosealicense.com/licenses/mit/)
 
-set up local json-server: npm install -g json-server json-server --watch db.json
 
-open the application in your web browser
+## Tech Stack
 
-## Author
+Client: ``` HTML | CSS | JS```
 
-Developed by Samson Githinji
 
-Thank you for choosing Flatdango! Enjoy your movie experience at the Flatiron Movie Theater.
+
