@@ -15,7 +15,6 @@ If you have any feedback, please reach out to me at githinjisamson148@gmail.com
 
 ## Installation
 
-Install my-project with npm
 
 ```bash
   copy ssh
